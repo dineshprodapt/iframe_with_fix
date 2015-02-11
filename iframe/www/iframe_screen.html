@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>Hello World</title>
+<script src="js/jquery.js"></script>
+<script language="JavaScript">
+$(document).ready(function() {
+    var window_size = $(window).height();
+    $('#iframe1').css('height', window_size);
+});
+</script>		
+<style>
+.iframe_style{
+ border: 3px solid red;
+}
+</style>
+	</head>
+    <body>			
+		<iframe src="https://fju141.windstream.com:8183/mobile.action?token=100811&billsys=RC07" id="iframe1" height="100%" width="100%"/>
+    </body>
+</html>
