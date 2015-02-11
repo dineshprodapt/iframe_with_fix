@@ -9,9 +9,9 @@
         <title>Hello World</title>
 <script src="js/jquery.js"></script>
 <script language="JavaScript">
-$(document).ready(function(){
-var iframe_height = screen.height;
-$('#iframe1').height(iframe_height);
+$(document).ready(function() {
+    var window_size = $(window).height();
+    $('#iframe1').css('height', window_size);
 });
 </script>		
 <style>
