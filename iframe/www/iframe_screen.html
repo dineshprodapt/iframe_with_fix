@@ -9,13 +9,23 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
 
+<script language="JavaScript">
+<!--
+function autoResize(id){
+alert("inside");
+    var newheight;
+    var newwidth;
 
-<script>
-function onLoadHandler() {
-	document.getElementById("iframe").style.height = screen.height+"px";
+    if(document.getElementById){
+        newheight=document.getElementById('iframe1').contentWindow.document .body.scrollHeight;
+        newwidth=document.getElementById('iframe1').contentWindow.document .body.scrollWidth;
+    }
+
+    document.getElementById(id).height= (newheight) + "px";
+    document.getElementById(id).width= (newwidth) + "px";
 }
-</script>
-		
+//-->
+</script>		
 <style>
 .iframe_style{
  border: 3px solid red;
@@ -23,6 +33,6 @@ function onLoadHandler() {
 </style>
 	</head>
     <body>			
-			<iframe name="Stack" src="https://fju141.windstream.com:8183/mobile.action?token=100811&billsys=RC07" frameborder="0" scrolling="no" id="iframe" width="100%"  onload="onLoadHandler();"/>
+			<iframe name="Stack" src="https://fju141.windstream.com:8183/mobile.action?token=100811&billsys=RC07" marginheight="0"  id="iframe1" width="100%" onLoad="autoResize('iframe1');"/>
     </body>
 </html>
